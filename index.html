@@ -1,12 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Wanchen Zha0</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanchen Zhao | Math PhD & Topological Data Analyst & ML Researcher</title>
+    <div class="education-highlights">
+    <div class="edu-item">
+        <strong>PhD Mathematics, 2026</strong> <br> University of Florida
+    </div>
+    <div class="edu-item">
+        <strong>BS Applied Physics, 2021</strong> <br> Columbia University
+    </div>
+</div>
+    <style>
+    :root {
+        /* Professional Green Palette */
+        --gradient-start: #1e392a; /* Deep Forest */
+        --gradient-mid: #2d5a43;   /* Emerald */
+        --gradient-end: #4a8c6f;   /* Sage */
+        --accent-green: #659563;
+        --bg: #f8fafc;
+        --text: #1e293b;
+    }
+
+    body { 
+        font-family: 'Inter', 'Segoe UI', sans-serif; 
+        line-height: 1.7; 
+        color: var(--text); 
+        background: var(--bg); 
+        margin: 0; 
+    }
+
+    header { 
+        background-color: var(--gradient-start); 
+        /* Green Gradient */
+        background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-mid) 50%, var(--gradient-end) 100%);
+        color: white !important; 
+        padding: 5rem 1rem 7rem 1rem; 
+        text-align: center;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        margin-bottom: -3rem;
+    }
+
+    header h1 { 
+        margin: 0; 
+        font-size: 2.8rem; 
+        text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    header p { 
+        font-size: 1.2rem; 
+        opacity: 0.9; 
+        text-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    }
+
+    nav { 
+        background: rgba(255, 255, 255, 0.9); 
+        backdrop-filter: blur(10px); 
+        padding: 1rem; 
+        text-align: center; 
+        position: sticky; 
+        top: 0; 
+        z-index: 1000;
+        border-bottom: 2px solid var(--accent-green); /* Matching green line */
+    }
+
+    nav a { 
+        margin: 0 15px; 
+        text-decoration: none; 
+        color: #2d5a43; /* Dark green links */
+        font-weight: 700; 
+        transition: all 0.3s;
+    }
+
+    nav a:hover { 
+        color: #4a8c6f;
+        text-decoration: underline;
+    }
+    .education-highlights {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        margin-top: 10px;
+        border-top: 1px solid rgba(255,255,255,0.3);
+        padding-top: 10px;
+    }
+
+    .edu-item {
+        font-size: 0.95rem;
+        line-height: 1.4;
+        text-align: left;
+    }
+
+    /* Mobile Responsive Fix */
+    @media (max-width: 600px) {
+        .education-highlights {
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+        }
+        .edu-item { text-align: center; }
+    }
+
+    /* Keep your existing .container, .card, and .btn styles below this */
+    .container { max-width: 850px; margin: 2rem auto; padding: 0 1.5rem; }
+    
+    .card { 
+        background: white; 
+        padding: 1.5rem; 
+        border-radius: 12px; 
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+        margin-bottom: 1.5rem; 
+        transition: transform 0.3s ease;
+        border-left: 4px solid var(--accent-green); /* Subtle green accent on cards */
+    }
+
+    .card:hover { transform: translateY(-5px); }
+
+    .btn { 
+        display: inline-block; 
+        background: var(--gradient-mid); 
+        color: white; 
+        padding: 0.6rem 1.2rem; 
+        text-decoration: none; 
+        border-radius: 6px; 
+    }
+    .contact-row {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 2rem;
+    }
+
+    .contact-link {
+        text-decoration: none;
+        color: var(--gradient-mid);
+        border: 2px solid var(--gradient-mid);
+        padding: 0.8rem 1.5rem;
+        border-radius: 30px;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+    }
+
+    .contact-link:hover {
+        background: var(--gradient-mid);
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(45, 90, 67, 0.2);
+    }
+
+    /* Mobile: Stacks the buttons so they don't overlap */
+    @media (max-width: 600px) {
+        .contact-row {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .contact-link {
+            width: 200px;
+        }
+    }
+</style>
 </head>
 
 <body>
-<h1>Wanchen Zhao</h1>
-<p>Topological Data Analysis / Machine Learning</p>
+
+<header>
+    <h1>Wanchen Zhao</h1>
+    <p>PhD Candidate in Mathematics | Specializing in Topological Data Analysis & Machine Learning</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#projects">ML Projects</a>
+    <a href="#cv">Resume/CV</a>
+</nav>
+
+<div class="container">
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Mathematics PhD candidate graduating in May 2026. My work bridges the gap between Topology and practical Machine Learning applications. I focus on designing evaluation metrics grounded on structural properties of data and Wasserstein robustness of ML representations.</p>
+    </section>
+
+    <section id="research">
+        <h2>Research & Preprints</h2>
+        <div class="card">
+            <strong>Wasserstein stability of persistence landscapes and barcodes</strong>
+            <p>ArXiv: <a href="https://arxiv.org/abs/2509.20921">2509.20921</a></p>
+            <ul>
+                <li>Developed a new metric and stability framework for topological and vector-based data summaries.</li>
+            <li>Proved a 1-Lipschitz stability result: summaries are bounded by $\frac{1}{2} W_p$ (Wasserstein distance) of the inputs.</li>
+            <li>Guarantees feature robustness for TDA applications in noisy ML environments.</li>
+            </ul>
+        </div>
+        <div class="card">
+    <strong>Continuous persistence landscapes</strong>
+    <p>ArXiv: <a href="https://arxiv.org/abs/2512.00206">2512.00206</a></p>
+    <ul>
+        <li>Generalized classical persistence landscapes to the continuous setting (asymptotic limit as $n \to \infty$).</li>
+        <li>Enhanced stability for large-scale TDA by modeling the limit behavior of data distributions.</li>
+        <li>Created a flexible framework for integrating topological features into high-volume ML pipelines.</li>
+    </ul>
+</div>
+        <h3>Selected Presentations</h3>
+        <ul>
+            <li>"Wasserstein Stability of Persistence Landscapes and Barcodes" - AMS Spring Southeastern Sectional Meeting , 2025</li>
+            <li>"Wasserstein Stability of Persistence Landscapes and Barcodes" - JMM Graduate Posters Session, 2025 <strong>Best Poster Award</strong></li>
+            <li>"Tracking Topological Features as Weather Regimes in Climate Science Data" - Joint Mathematics Meetings (JMM), 2025</li>
+            <li>"Persistence Measures and Continuous persistence landscapes" - AMS Spring Southeastern Sectional Meeting , 2024</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Machine Learning Projects</h2>
+        <div class="card">
+            <h3>Structural Analysis of Nonlinear Dynamical Couplings</h3>
+            <p>Used persistent homology to identify couplings of multivariate time series data. Integrated topological features in the embedded space to classify the dynamical systems.</p>
+            <a href="https://github.com/WanchenZ/Identify-Couplings-of-Oscillatory-Data-Using-TDA" class="btn">View Code on GitHub</a>
+        </div>
+        <div class="card">
+            <h3>Geometric Wasserstein Autoencoder</h3>
+            <p>Implementing a Variational Autoencoder (VAE) that utilizes the Wasserstein Distance (approximated by Sinkhorn Divergence) to learn latent representations of geometric manifolds, outperforming standard MSE loss in capturing point cloud topology.</p>
+            <a href="https://github.com/yourusername/repo" class="btn">View Code on GitHub</a>
+        </div>
+    </section>
+
+    <section id="honors">
+        <h2>Awards & Recognition</h2>
+        <ul>
+            <li class="reward">Best Poster Award - <i>Joint Mathematics Meetings (JMM)</i>, 2025</li>
+            <li class="reward">Eleanor Ewing Ehrlich Award - University of Florida, 2025</li>
+        </ul>
+    </section>
+
+    <section id="cv">
+        <h2>Resume</h2>
+        <p>For a detailed view of my academic and technical background:</p>
+        <a href="assets/resume.pdf" class="btn" target="_blank">Download Resume (PDF)</a>
+    </section>
+
+</div>
+<section id="contact" style="text-align: center; margin-top: 5rem; padding: 3rem 0; background: #fff; border-top: 1px solid #e2e8f0;">
+    <h2>Let's Connect</h2>
+    <p>Currently seeking Machine Learning Research and Data Science roles for Summer 2026.</p>
+    
+    <div class="contact-row">
+        <a href="mailto:wanchenzzzhao@gmail.com" class="contact-link">
+            <strong>Email</strong>
+        </a>
+        <a href="https://linkedin.com/in/wanchen-zhao-1a1a90373/" target="_blank" class="contact-link">
+            <strong>LinkedIn</strong>
+        </a>
+        <a href="https://github.com/WanchenZ" target="_blank" class="contact-link">
+            <strong>GitHub</strong>
+        </a>
+        <a href="https://scholar.google.com/citations?user=80jrFz4AAAAJ&hl=en" target="_blank" class="contact-link">
+            <strong>Google Scholar</strong>
+        </a>
+    </div>
+</section>
+<footer style="text-align: center; padding: 2rem; color: #777;">
+    &copy; 2026 Wanchen Zhao
+</footer>
+
 </body>
 </html>
